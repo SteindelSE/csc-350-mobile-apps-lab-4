@@ -1,0 +1,61 @@
+<!--
+  Assignment: Week 4 Lab
+  Author: Derek Steindel
+  Date: 7/31/2021
+  Purpose: Password Generator to generate a chosen number of password of the chosen length.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Password Generator</h1>
+      </div>
+
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="../" class="ui-btn-active ui-state-persist">
+              Generator</a
+            >
+          </li>
+          <li>
+            <a href="information.html">Information</a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <fieldset>
+          <legend><h2>Generator Settings</h2></legend>
+          <label for="quantity-slider-fill">Number of Passwords:</label>
+          <input type="range" name="quantity-slider-fill" id="quantity-slider-fill" value="1" min="1" max="100" data-highlight="true">
+          <label for="length-slider-fill">Number of Characters:</label>
+          <input type="range" name="length-slider-fill" id="length-slider-fill" value="8" min="8" max="100" data-highlight="true">
+          <button id="generate-button">Generate!</button>
+        </fieldset>
+        <table id="passwords-table"></table>
+      </div>
+
+      <div data-role="footer">
+        <p>
+          <small>Copyright &copy; 2021 - Derek Steindel</small>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

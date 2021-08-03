@@ -1,0 +1,55 @@
+<!--
+  Assignment: Week 4 Lab
+  Author: Derek Steindel
+  Date: 7/31/2021
+  Purpose: Information page on how to use the password generator.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Password Generator</h1>
+      </div>
+
+      <div data-role="navbar">
+        <ul>
+          <li>
+            <a href="../">
+              Generator</a
+            >
+          </li>
+          <li>
+            <a href="information.html" class="ui-btn-active ui-state-persist">Information</a>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <h1>How To Use This App</h1>
+        <h2>Select the Number of Passwords</h2>
+        <p>On the first slider, labelled "Number of Passwords", drag the slider or enter the value to indicate the number of random passwords you would like to generate. This can be between 1 and 100 passwords at at time.</p>
+        <h2>Select the Number of Characters</h2>
+        <p>On the second slider, labelled "Number of Characters", drag the slider or enter the value to indicate the number of characters you would like each generated password to have. This can be between 8 and 100 characters</p>
+      </div>
+
+      <div data-role="footer">
+        <p>
+          <small>Copyright &copy; 2021 - Derek Steindel</small>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

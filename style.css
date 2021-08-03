@@ -1,0 +1,19 @@
+/*
+  Name: Derek Steindel 
+  Date: 7/31/21
+  Assignment: Password Generator
+*/
+
+table
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, td
+{
+  border-collapse: collapse;
+  border-style: double;
+  border-color: black;
+  padding: 15px;
+}
